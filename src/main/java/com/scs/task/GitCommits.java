@@ -12,7 +12,7 @@ import org.kohsuke.github.*;
  */
 public class GitCommits {
     /* Github Personal Access Token*/
-    private final String TOKEN = "3e885f44aaf1d202b13ecf277d7fbfbc279d8980";
+    private final String TOKEN = "TOKEN_GOES_HERE";
     private final int PAGE_SIZE = 25;
 
     private String repo;
