@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>Git Commits</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"/>
+
+    <link href="../static/css/main.css" th:href="@{css/main.css}" rel="stylesheet" media="screen"/>
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-center">25 Latest Commits to <a href="https://github.com/rails/rails">rails/rails</a></h3>
+    </div>
+    <hr></hr>
+    <div class="container">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <td class="text-center col-md-2"><strong>Name of User</strong></td>
+                <td class="text-center col-md-4"><strong>Commit</strong></td>
+                <td class="text-center col-md-6"><strong>Commit Message</strong></td>
+            </tr>
+            <tr th:each="commit : ${commitsList}">
+                <td class="col-md-2" th:text="${commit.user}"></td>
+                <td class="col-md-4" th:text="${commit.commit}"></td>
+                <td class="col-md-6" th:text="${commit.msg}"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
