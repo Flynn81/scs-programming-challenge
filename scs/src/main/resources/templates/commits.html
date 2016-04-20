@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>
+        25 Most Recently Commits of rails/rails
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+</head>
+<body>
+
+<div class="container">
+    <h3 align="center">25 Most Recently Commits of <a href="https://github.com/rails/rails">rails/rails</a></h3>
+</div>
+
+<div class="container">
+
+    <table class="table table-bordered table-hover">
+        <tr>
+            <td class="text-center col-md-2"><strong>User Name</strong></td>
+            <td class="text-center col-md-4"><strong>Commit SHA</strong></td>
+            <td class="text-center col-md-6"><strong>Commit Message</strong></td>
+        </tr>
+        <tr th:each="commit : ${commits}">
+            <td class="col-md-2" th:text="${commit.userName}"></td>
+            <td class="col-md-4" th:text="${commit.sha}"></td>
+            <td class="col-md-6" th:text="${commit.msg}"></td>
+        </tr>
+
+    </table>
+
+
+</div>
+
+
+</body>
+</html>
