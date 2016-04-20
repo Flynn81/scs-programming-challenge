@@ -1,0 +1,12 @@
+Thanks for reading.
+
+CommitsController.java as a controller and you have to input your token or user name and password to be authorized
+to access github api.
+
+Commit.java works as an entity class.
+
+CommitsServices.java, implements CommitServiceInterface, works as a service. Scalable.
+
+Application.java. Spring boot application.
+
+Thanks again.
