@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-Sample Spring Boot Web Application with JSP
-====
-
-Building and running
----
-
-    mvn clean spring-boot:run
-=======
 ## SCS Programming Task
 
 In order to be considered for the Software Developer, you mush complete the following steps. 
