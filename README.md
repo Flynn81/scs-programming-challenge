@@ -22,3 +22,4 @@ In order to be considered for the Software Developer, you mush complete the foll
 5. Send us a pull request, we will review your code and get back to you
 
 
+>>>>>>> 6f6266d46c5d7977e528e8eac81ea2b1d8af0ac4
