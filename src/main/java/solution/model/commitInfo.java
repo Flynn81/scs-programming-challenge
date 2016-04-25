@@ -1,6 +1,6 @@
 package main.java.solution.model;
 
-public class commitInfo {
+public class CommitInfo {
 	private String user;
 	private String commit;
 	private String message;
